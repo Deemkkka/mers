@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background: #070a1b;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #fff;
+}
+
+a {
+  text-decoration: none; /*убираем подчеркивание для ссылок*/
+  color: inherit; /*наследовать значение у родителя*/
+}
+
+.header {
+}
+
+.container {
+  max-width: 1220px; /*нам нужна ширина 1200, но так как установлен box-sizing: border-box;, то при указании padding: 0 10px ширина у нас считалась бы 1200-20-1180, поэтому добавили на 20 больше */
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+/*1:05*/
