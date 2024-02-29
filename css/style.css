@@ -22,6 +22,17 @@ a {
   color: inherit; /*наследовать значение у родителя*/
 }
 
+button {
+  background-color: transparent; /*прозрачный цвет*/
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none; /*убираем нормированный список для тега ul*/
+}
+
 .header {
 }
 
@@ -37,4 +48,26 @@ a {
   align-items: center;
   height: 100px;
 }
-/*1:05*/
+
+.list {
+  display: flex;
+}
+
+.list__item + .list__item {
+  margin-left: 30px;
+}
+
+.list-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.list-link:hover {
+  background-color: #c1a1d2;
+}
+
+/*1:14*/
