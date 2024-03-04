@@ -137,4 +137,33 @@ ul {
   margin-bottom: 25px;
   line-height: 120%;
 }
-/*2:08*/
+
+.premier {
+  margin-bottom: 150px;
+}
+
+.premier__inner {
+  display: flex;
+  gap: 60px;
+}
+
+.premier__text {
+  margin-bottom: 21px;
+}
+
+.premier__img {
+  margin-bottom: 20px;
+}
+
+.premier__btn {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 120%;
+  color: #f402a2;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px;
+  border: 1px solid #f402a2;
+}
+/*0:20 day2*/
