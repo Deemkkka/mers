@@ -15,6 +15,7 @@ body {
   line-height: 120%;
   font-weight: 400;
   color: #fff;
+  background: linear-gradient(180deg, #070a1b 0%, #2a3170 100%);
 }
 
 a {
@@ -37,6 +38,9 @@ ul {
   max-width: 1220px; /*нам нужна ширина 1200, но так как установлен box-sizing: border-box;, то при указании padding: 0 10px ширина у нас считалась бы 1200-20-1180, поэтому добавили на 20 больше */
   margin: 0 auto;
   padding: 0 10px;
+}
+.header{
+  background: #070A1B;
 }
 
 .header__top {
@@ -107,6 +111,9 @@ ul {
   font-size: 24px;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
+}
+.footer{
+  background: #070A1B;
 }
 
 .footer__inner {
@@ -217,6 +224,31 @@ ul {
   grid-template-columns: 250px 250px auto 330px;
   grid-template-rows: auto auto;
   gap: 14px 44px;
+  margin-bottom: 100px;
 }
 
-/*0:56 day2*/
+.design__cell-one{
+  grid-row:  1/3;
+}
+
+.design__cell-two{
+  grid-row-end: -1; /*начинается с конца*/
+  display: flex;
+  align-items: flex-end;
+}
+
+.design__cell-three{
+  grid-row-end: -1;
+  grid-column-end: -1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.design__cell-text + .design__cell-text{
+  margin-top: 15px;
+}
+
+.design-slider__item{
+  margin: 0 30px;
+}
+/*1:23 day2*/
