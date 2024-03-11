@@ -23,6 +23,10 @@ a {
   color: inherit; /*наследовать значение у родителя*/
 }
 
+img{
+  max-width: 100%;
+}
+
 button {
   background-color: transparent; /*прозрачный цвет*/
   border: none;
@@ -294,4 +298,51 @@ ul {
   object-fit: cover;
 }
 
-/*1:52 day2*/
+@media(max-width: 768px){
+  .header__logo{
+    margin-left: 0;
+  }
+  .logo-img{
+    width: 180px;
+  }
+  .list__item + .list__item {
+    margin-left: 15px;
+  }
+  .header__nav-img{
+    width: 25px;
+  }
+  .list-link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .title{
+    font-size: 55px;
+  }
+
+  .title-descr{
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 520px){
+  .header__top {
+    flex-wrap: wrap;
+    align-items: center;
+}
+  .list {
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .title{
+    font-size: 34px;
+  }
+
+  .footer__inner{
+    flex-wrap: wrap;
+    align-items: center;
+    height: 150px;
+  }
+}
+/*2:08 day2*/
